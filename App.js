@@ -56,6 +56,7 @@ export default class App extends React.Component {
         </View>
         {this.state.favoriteCategory && (
           <Picker
+            // key={options} // re-enable this line to enable the known workaround
             onValueChange={this.handleValueChange}
             selectedValue={this.state.favoriteThing}>
             {options.map(item => (
